@@ -1,0 +1,170 @@
+@font-face {
+  font-family: IranNastaliq;
+  src: url("../fonts/IranNastaliq.eot");
+  src: url("../fonts/IranNastaliq.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/IranNastaliq.woff2") format("woff2"),
+    url("../fonts/IranNastaliq.woff") format("woff"),
+    url("../fonts/IranNastaliq.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Shabnam;
+  src: url("../fonts/Shabnam.eot");
+  src: url("../fonts/Shabnam.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Shabnam.woff") format("woff"),
+    url("../fonts/Shabnam.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Shabnam;
+  src: url("../fonts/Shabnam-Bold.eot");
+  src: url("../fonts/Shabnam-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Shabnam-Bold.woff") format("woff"),
+    url("../fonts/Shabnam-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Shabnam;
+  src: url("../fonts/Shabnam-Light.eot");
+  src: url("../fonts/Shabnam-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Shabnam-Light.woff") format("woff"),
+    url("../fonts/Shabnam-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+
+* {
+  text-align: right;
+}
+
+body {
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  font-size: 16px;
+  font-family: "Shabnam", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+#telLine {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: right;
+  align-items: center;
+  background-color: #3e8c4b;
+}
+
+#telicon {
+  padding-right: 10px;
+  margin: 0;
+}
+
+#telLine h2 {
+  padding-right: 20px;
+  margin: 0;
+  color: white;
+}
+
+#iconBar {
+  display: flex;
+  background-color: white;
+  font-family: irannastaliq, Arial, Helvetica, sans-serif;
+}
+
+.specialty {
+  width: 25%;
+  margin: auto;
+}
+
+#specialty {
+  font-size: 3vw;
+  padding-right: 20px;
+}
+
+.myName {
+  width: 50%;
+}
+
+#myName {
+  font-size: 7vw;
+  margin: 0;
+  padding-top: 5px;
+  padding-right: 50px;
+  text-align: center;
+  text-shadow: 2px 2px 3px #3e8c4b;
+}
+
+.icon {
+  width: 25%;
+}
+
+#icon {
+  float: left;
+  width: 50%;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+.topnav {
+  background-color: #96aa63;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: #6f9580;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #6f9580;
+  color: white;
+}
+
+.topnav .iconNav {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a {
+    display: none;
+  }
+  .topnav a.iconNav {
+    float: right;
+    display: block;
+  }
+}
+
+.iconNav img {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive a.iconNav {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: right;
+  }
+}
